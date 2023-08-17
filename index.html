@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hablu Book Store</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <main class="container">
+    <section> 
+      <h1 class="text-center text-4xl mt-12">Welcome to Hablu <span class="text-amber-400">Book Store</span></h1>
+      <div class="store-main mt-6">
+        <div class="card-img-section grid grid-cols-3 gap-4  ">
+          <div class="card text-center ">
+            <img src="./images/download.jpeg">
+            <div class="card-tittle text-center">
+              <h2 class="text-2xl text-amber-400 mt-2">প্রোগ্রামিং এর চৌদ্দগোষ্ঠী</h2>
+              <h4 class="text-xl mt-2">Price : $ <span  id="price">30</span></h4>
+              <button class="btn-cart" onclick="cartItem(this)">Add Cart</button>
+            </div>
+          </div>
+          <div class="card text-center">
+            <img src="./images/hablu1.jpg">
+            <div class="card-tittle text-center">
+              <h2 class="text-2xl text-amber-400 mt-2">হাবুলদের জন্য প্রোগ্রামিং</h2>
+              <h4 class="text-xl mt-2">Price : $ <span  id="price">35</span></h4>
+              <button class="btn-cart" onclick="cartItem(this)">Add Cart</button>
+            </div>
+          </div>
+          <div class="card text-center">
+            <img src="./images/hablu2.jpg">
+            <div class="card-tittle text-center">
+              <h2 class="text-2xl text-amber-400 mt-2">প্রোগ্রামিং এর বলদ টু বস</h2>
+              <h4 class="text-xl mt-2">Price : $ <span  id="price">36</span></h4>
+              <button class="btn-cart" onclick="cartItem(this)">Add Cart</button>
+            </div>
+          </div>
+          <div class="card text-center">
+            <img src="./images/hablu3.jpeg">
+            <div class="card-tittle text-center">
+              <h2 class="text-2xl text-amber-400 mt-2">প্যারাময় লাইফের প্যারাসিটামল</h2>
+              <h4 class="text-xl mt-2">Price : $ <span  id="price">37</span></h4>
+              <button class="btn-cart" onclick="cartItem(this)">Add Cart</button>
+            </div>
+          </div>
+          <div class="card text-center">
+            <img src="./images/download.jpeg">
+            <div class="card-tittle text-center">
+              <h2 class="text-2xl text-amber-400 mt-2">প্রোগ্রামিং এর চৌদ্দগোষ্ঠী</h2>
+              <h4 class="text-xl mt-2">Price : $ <span id="price">30</span></h4>
+              <button class="btn-cart" onclick="cartItem(this)">Add Cart</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="checkout-section">
+          <h2 class="text-center text-xl text-orange-700">Use <span id="">Hablu20</span> for get 20% Discount</h2>
+            <h3 class="text-center text-2xl" >Selacte Items :</h3>
+            <div class="selected-items" id="selected-items">
+
+            </div>
+            <h4 class="text-center text-2xl text-amber-700 mt-2" >Total $ :</h4>
+              <h2 id="priceTotal"></h2>
+              <div class="chekout">
+                <h5 class="text-2xl mt-2">After Discount Total : <span id="discountTotal">$ </span></h5>
+
+                <input type="text" name="" id="discount" placeholder="Hablu20" class="cupon">
+                <button id="coupon-btn">Apply</button>
+              </div>
+        </div>
+      </div>
+
+
+    </section>
+  </main>
+  <script src="./js/app.js"></script>
+</body>
+</html>
