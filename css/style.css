@@ -5,6 +5,7 @@
 .store-main{
     display: flex;
 }
+
 .card{
     border: 2px solid black;
     padding: 14px;
@@ -46,6 +47,7 @@
     margin-top: 10px;
     margin-bottom: 10px;
     font-weight: bold;
+    list-style: none;
 }
 #priceTotal{
     font-size: 30px;

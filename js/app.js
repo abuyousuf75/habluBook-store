@@ -8,9 +8,11 @@ function cartItem(target){
      }
     const selectedItems = target.parentNode.childNodes[1].innerText;
     const li = document.createElement('li');
-    li.innerText = selectedItems;
+    //li.innerText = selectedItems
     const items = document.getElementById('selected-items');
     items.appendChild(li);
+    const countList = items.childElementCount;
+    li.innerHTML = `${countList}. ${selectedItems}`
     const forPriceAdd = target.parentNode.childNodes[3].innerText.split(' ')[3]
     const priceNumber = parseFloat(forPriceAdd)
     priceFirst = parseFloat(priceFirst) + priceNumber;
@@ -27,6 +29,7 @@ const discounBtn = document.getElementById('coupon-btn').addEventListener('click
     if(inputValue === 'Hablu20'){
         const afterDiscount = discount-(discount *  discountParcent / 100);
         getDiscoutPrice.innerText= afterDiscount;
+        alert ('Discount Added')
         // Clear the input field
         document.getElementById('discount').value = '';
     }else{
